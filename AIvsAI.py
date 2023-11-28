@@ -10,10 +10,10 @@ game_board = np.zeros(board_shape, dtype=int)
 
 game_end = False
 whos_turn = {0: 'o', 1: 'x'}
-mcts_players = {'o': VanilaMCTS(n_iterations=1500, depth=15, exploration_constant=100,
-                                game_board=game_board, player='o'),
-                'x': VanilaMCTS(n_iterations=1500, depth=15, exploration_constant=100,
-                                game_board=game_board, player='x')}
+mcts_players = {'x': VanilaMCTS(n_iterations=2000, depth=30, exploration_constant=100,
+                                game_board=game_board, player='x'),
+                'o': VanilaMCTS(n_iterations=2000, depth=30, exploration_constant=100,
+                                game_board=game_board, player='o')}
 
 current_player = 'o'
 
